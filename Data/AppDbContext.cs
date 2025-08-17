@@ -16,9 +16,11 @@ namespace EcommerceApi.Data
         // DbSet<User> means "create a Users table in the database"
         // Add Users table
         public DbSet<User> Users { get; set; }
-        
+
         public DbSet<RefreshToken> RefreshTokens { get; set; }
 
         public DbSet<Category> Categories { get; set; }
+        
+        public DbSet<Product> Products { get; set; }
     }
 }
