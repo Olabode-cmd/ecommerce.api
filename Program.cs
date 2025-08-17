@@ -1,11 +1,23 @@
 using EcommerceApi.Data;
 using EcommerceApi.Services;
+using EcommerceApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Configure Cloudinary
+builder.Configuration.AddEnvironmentVariables();
+builder.Services.Configure<CloudinarySettings>(options =>
+{
+    options.CloudName = Environment.GetEnvironmentVariable("CLOUDINARY_CLOUD_NAME") ?? "";
+    options.ApiKey = Environment.GetEnvironmentVariable("CLOUDINARY_API_KEY") ?? "";
+    options.ApiSecret = Environment.GetEnvironmentVariable("CLOUDINARY_API_SECRET") ?? "";
+});
+
+builder.Services.AddScoped<CloudinaryService>();
 
 // Add JWT authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

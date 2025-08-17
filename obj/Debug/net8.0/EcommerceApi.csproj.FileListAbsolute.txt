@@ -178,3 +178,6 @@ C:\Users\PC\Documents\EcommerceApi\bin\Debug\net8.0\Microsoft.IdentityModel.Prot
 C:\Users\PC\Documents\EcommerceApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\PC\Documents\EcommerceApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\PC\Documents\EcommerceApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\PC\Documents\EcommerceApi\obj\Debug\net8.0\EcommerceApi.sourcelink.json
+C:\Users\PC\Documents\EcommerceApi\bin\Debug\net8.0\CloudinaryDotNet.dll
+C:\Users\PC\Documents\EcommerceApi\bin\Debug\net8.0\Newtonsoft.Json.dll
